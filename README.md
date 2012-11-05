@@ -13,8 +13,8 @@ inside your project's directory, they will also be skipped and this well...
 sucks.
 
 Sometimes tests from a third party app installed installed in your
-`PYTHONPATH` fail for no reason, making output of `manage.py test` and this
-well... sucks. 
+`PYTHONPATH` fail for no reason, making output of `manage.py test` noisy
+ and this, well... sucks. 
 
 Django-test-exclude is a one-file solution. Just list the packages
 you want to skip during testing and voilla!
