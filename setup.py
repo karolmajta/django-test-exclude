@@ -8,7 +8,7 @@ setup(
     author_email='karolmajta@gmail.com',
     description='Easy application excludes for django projects',
     
-    requires=['Django (>=1.8.0)'],
+    requires=['Django (>=1.6.0)'],
 
     packages=['django_test_exclude'],
     package_dir={
