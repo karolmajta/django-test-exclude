@@ -1,9 +1,9 @@
-from django.test.simple import DjangoTestSuiteRunner
+from django.test.runner import DiscoverRunner
 from django.conf import settings
 
 EXCLUDED_APPS = getattr(settings, 'TEST_EXCLUDE', [])
 
-class ExcludeTestSuiteRunner(DjangoTestSuiteRunner):
+class ExcludeTestSuiteRunner(DiscoverRunner):
     
     def build_suite(self, *args, **kwargs):
         suite = super(ExcludeTestSuiteRunner, self).build_suite(*args, **kwargs)
